@@ -94,7 +94,7 @@ Packages.ensureGitIgnore = function (packages, callback) {
     // Append packages to the gitignore
     _.forOwn(packages, function (def, packageName) {
       // Convert colons in package names to underscores for Windows
-      packageName = packageName.replace(/:/g, '_');
+      // packageName = packageName.replace(/:/g, '_');
 
       if (packageName === 'token' || gitIgnore.indexOf(packageName) > -1) return;
 
